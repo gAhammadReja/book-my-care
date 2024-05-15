@@ -1,0 +1,97 @@
+.App{
+    background-image: url('../bg.jpg');
+    background-position: center;
+    background-size: cover;
+   }
+
+   .mainHero{
+    min-height: 60vh;
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.007),rgba(5, 0, 31, 0.766));
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+   }
+.mainHero .aboutUs{
+    max-width: 50%;
+    margin-top: 3rem;
+    padding: 3rem;
+    color: rgb(243, 250, 255);
+}
+.aboutUs h2{
+  margin: 1rem 0;
+  font-weight: 400;
+}
+.logo{
+    margin: 2rem;
+}
+   .logo img{
+    width: 13rem;
+    border: 2px solid rgba(233, 220, 220, 0.259);
+    border-radius: 50%;
+    position: relative;
+    top: 2rem; 
+    transition-duration: 1s;
+    animation: rotate 5s infinite;
+   }
+.logo img:hover{ 
+    width: 15rem;
+    transition-duration: 2s;
+}
+
+
+.logo {
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+    height: 50%;  
+    background-image: linear-gradient(to bottom, rgba(2, 16, 41, 0.307), rgba(23, 1, 1, 0.689)); 
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.logo img {
+    display: block;
+    z-index: 2;
+}
+
+
+
+
+.titleHead{
+font-size: 4rem;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color:rgb(252, 255, 250);
+text-shadow: 2px 2px 4px rgb(255, 0, 0), -2px -2px 4px rgb(0, 0, 255);
+margin-top: 2rem;
+} 
+@keyframes rotate {
+ 0%{
+     rotate: 0deg;
+ }100%{
+     rotate: 360deg;
+ }
+}
+
+  @media screen and (max-width:1280px) {
+    .logo img{
+     width: 10rem;
+    }
+    .mainHero .aboutUs{
+      max-width: 80%;
+      margin-top: 1rem;
+  }
+ }  @media screen and (max-width:720px) {
+    .logo{
+     margin: auto;
+    }
+    
+ }

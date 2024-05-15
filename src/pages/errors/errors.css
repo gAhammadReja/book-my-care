@@ -1,0 +1,31 @@
+.not-found-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+ .not-found-container h1 {
+    font-size: 3em;
+    color: #ff4d4d; /* Red color */
+  }
+  
+  .not-found-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+ .not-found-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ .not-found-container button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+  

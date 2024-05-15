@@ -1,0 +1,127 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(23, 0, 90, 0.548);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center; 
+    margin: auto;
+}
+nav ul li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    padding: 10px 2.1rem;
+    text-decoration: none;
+    color: rgb(255, 223, 223);
+}
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: rgb(16, 186, 101); 
+    color: rgb(223, 223, 255);
+    border-radius: 2px;
+    transition-duration: 0.5s;
+}
+nav img:hover{
+width: 120px;
+transition-delay: 1s;
+transition-duration: 2s;
+}
+.closeButton {
+    display:'flex';
+    justify-content:'space-between';
+    padding-left:'8px';
+    font-size:'2.5rem';
+    color:'white';
+}
+@media screen and (max-width:1280px) {
+    nav ul li a{
+        padding: 10px 0.8rem;
+        text-decoration: none;
+        color: rgb(255, 223, 223);
+    }
+}
+
+@media screen and (max-width:1060px) {
+    /* .closeButton{
+
+    } */
+    nav {
+        padding: 0 5vw;
+    }
+     nav img{
+         width: 50px;
+     }
+     nav h1{
+        font-size: 3rem;
+     }
+    nav ul{
+        display: none;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.768);
+     }
+     nav ul li{
+        padding: 1vh;
+        margin: 2vh;
+        
+     }
+     nav ul li a{
+        display: inline-block;
+        min-width: 50vw;
+        width: fit-content;
+        box-shadow: 3px 3px 3px red;
+     }
+    #ulList{ 
+        animation: trans 0.72s 0s 1 ease-in-out;
+    }
+    #bars{
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    .bar{
+        display: flex;
+        width: 20px;
+        margin:3px 5px;
+        border: 2px solid silver;
+        transition: all ease-in-out 0.61s;
+       
+    }
+  
+    .cross span{
+        border: 2px solid red;
+        transform: rotate(45deg);
+    }
+    .cross span:nth-child(2){
+        margin-top: -6px;
+        transform: rotate(-45deg);
+    }
+    .cross span:nth-last-child(1){
+        display: none;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    nav{
+        padding: 5px;
+    }
+    nav h1{
+        font-size: 2rem;
+    }
+}
+
+@keyframes trans {
+    0%{
+        left: -80vw;
+    }
+    100%{
+        left: 0;
+    }
+}

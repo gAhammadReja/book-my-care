@@ -1,0 +1,21 @@
+ 
+.department-list, .heading{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 1500px;
+    max-width: 90vw;
+}
+.department-item{
+    width: 450px;
+    margin:1rem 5px;
+    border-radius: 0.41rem;
+    box-shadow: 2px -2px 3px,-2px 2px 3px;
+    
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}

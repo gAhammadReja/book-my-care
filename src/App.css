@@ -1,0 +1,79 @@
+
+
+@media screen and (max-width:1500px) {
+    html,body{
+        font-size: 16px;
+    }
+}@media screen and (max-width:1200px) {
+    html,body{
+        font-size: 13px;
+    }
+}@media screen and (max-width:700px) {
+    html,body{
+        font-size: 12px;
+    }
+}
+ 
+.Cards section{
+    padding-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.hi{
+    padding-top: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hi::after{
+    margin: 20px;
+    padding: 10px;
+    width: 30rem;
+    content: 'Something Medical Center Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro eveniet possimus ab iure ad, quo delectus temporibus aut illo ipsum amet sit accusamus ullam perspiciatis eius, vitae ipsam aliquid.';
+    font-family: cursive;
+    font-size: 2rem;
+    color: rgb(95, 0, 183);
+    font-weight:500;
+}
+.mainSlide {
+    width: 45rem;
+    max-width: 90vw;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex; 
+    /* padding: 0; */
+    /* max-width: 90vw; */
+    transition: transform 0.5s ease;
+}
+
+.slides div {
+    flex: 0 0 auto;
+}
+
+/* Optional: Adjust this to change slide transition speed */
+.slide{
+    
+    border: 0.5rem solid rgb(46, 5, 112);
+    border-radius: 1rem;    
+    width: 40rem;
+    max-width: 75vw;
+    margin: 1rem;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+}
+.slide img{
+    width: 38rem;
+    max-width: 75vw;
+}
+
+ .card .btn{
+margin: 1rem auto;
+    width: 90%;
+ }
