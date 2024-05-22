@@ -5,20 +5,35 @@
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .mainMCList .center-listing{
     width: max-content;
     height: max-content;
     padding: 1rem;
-    margin:1rem 0.4rem;
     border: 1px inset red;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgb(17, 0, 55);
+    margin: 10px;
 }
-
+.center-listing div{
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.center-listing div img{
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+.center-listing div img:hover{
+    width: 105%;
+    height: 105%;
+}
 .mainMCList .center-listing h3{
     text-transform: uppercase;
     font-size: 1.5em;
@@ -27,25 +42,68 @@
 
 .popup{
     position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 65vh;
+    top: 0px;
+    overflow: hidden;
+    left: 0;
+    height: fit-content;
+width: 100vw;
+    min-height: 600px;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .popup .popup-div{
+    width: 700px;
+    max-width: 90vw;
     background-color: rgba(234, 235, 255, 0.934);
-    border: 2px solid rgb(0, 0, 55);
     border-radius: 1rem;
-    padding: 2rem;
-    position: relative; 
-    width: 600px;
-    max-width: 100vw; 
+    position: relative;
     animation: popup;
     animation-duration: 0.5s;
-
+}
+.container  {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 1.2rem;
+    padding: 1.5rem; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px inset;
+    background-color: rgba(208, 219, 235, 0.263);
+    overflow: hidden;
+}
+.backgroundImg{ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+    min-height: 300px;
+    max-height: 70vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px -1px 1px rgb(106, 0, 255);
+}
+.backgroundImg div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    background-color: #0208285b;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(226, 193, 254);
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    color: #333;
 }
 button{
     background-color: rgb(0, 72, 252);
@@ -59,7 +117,12 @@ button{
     margin: auto;
     margin-top: 1rem;
 }
-
+h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
 @keyframes popup {
     0%{
 width: 0;

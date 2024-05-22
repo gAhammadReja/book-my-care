@@ -7,7 +7,7 @@ import './App.css'
 import Appointment from './pages/appointment';
 import NotFoundPage from './pages/errors/pageNotFound';
 import Department from './pages/department/department'; 
-import MedicalCenter from './pages/medicalCenter/medicalCenter';
+import MedicalCenterList from './pages/medicalCenter/medicalCenterList';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/appointment" element={<Appointment />} />
         <Route path="/department" element={<Department />} />
-        <Route path="/medical-center" element={<MedicalCenter />} />
+        <Route path="/medical-center" element={<MedicalCenterList />} />
         
         <Route path="*" element={<NotFoundPage />} />
 

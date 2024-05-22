@@ -2,7 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(23, 0, 90, 0.548);
+    background-color: rgba(32, 0, 90, 0.833);
 }
 nav ul{
     display: flex;
